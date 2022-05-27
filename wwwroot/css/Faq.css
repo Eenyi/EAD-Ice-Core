@@ -1,0 +1,39 @@
+﻿.faq-outer-wrap {
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.faq-text{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.faq-outer {
+    width: 85%;
+    display: flex;
+}
+
+.faq-inner {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.faq-inner:hover {
+    transition: all 1200ms ease;
+    color: deeppink !important;
+    background-color: rgb(95, 170, 250, 1);
+}
+
+.faq-text {
+    color: white;
+    display: flex;
+    padding-top:0.7rem;
+    padding-left:0.7rem;
+    padding-right:0.7rem;
+}

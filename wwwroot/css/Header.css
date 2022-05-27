@@ -1,0 +1,11 @@
+﻿.HeaderHeight {
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    margin-left:2%;
+    margin-right:2%;
+    margin-top:3% !important;
+}
+

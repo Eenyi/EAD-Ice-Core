@@ -1,0 +1,29 @@
+﻿.InnerWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.OuterWrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.Theme {
+    background-color: deeppink;
+}
+
+.Text-h6 {
+    color: dodgerblue;
+}
+
+.Text-h3 {
+    color: deeppink;
+}
+
+.Text-G {
+    color:white;
+}
+
