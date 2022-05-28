@@ -1,8 +1,19 @@
-﻿.PickPay-wrap-outer {
+﻿.pickpay-outer-wrap {
     display: flex;
-    flex-direction:column;
-    justify-content:center;
-    margin-top:4rem;
+    justify-content:space-around;
+}
+
+.pickpay-inner-wrap {
+    display:flex;
+    justify-content:space-around;
+}
+
+
+.PickPay-wrap-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 .PickPay-wrap-image {
@@ -24,8 +35,32 @@
 
 .PickPay-wrap-content {
     display: flex;
-    margin-top:1rem;
-    margin-left:1rem;
     color:black;
     font-size: 22px;
+    margin-left:8px;
+}
+
+.pick-options {
+    background-color:wheat;
+    width:100%;
+}
+
+@media(max-width:850px) {
+    .PickPay-img {
+        height: 13.5rem;
+        width: 18rem;
+    }
+    
+    .PickPay-wrap-image {
+
+    }
+
+    .PickPay-wrap-outer {
+
+    }
+
+    .pickpay-outer-wrap {
+        flex-direction:column;
+        align-items:center;
+    }
 }
