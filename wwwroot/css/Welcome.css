@@ -1,0 +1,36 @@
+﻿.welcome-wrap-outer {
+    display:flex;
+    justify-content:center;
+    margin-top:0rem;
+}
+
+.welcome-wrap-inner {
+    display:flex;
+    justify-content:space-between;
+}
+
+.welcome-pic {
+    height:15rem;
+    width:15rem;
+    object-fit:contain;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.welcome-text {
+    color: deeppink;
+}
+
+@media(max-width:550px) {
+    .welcome-wrap-outer {
+        flex-direction:column;
+    }
+    .welcome-pic {
+        height: 12rem;
+        width: 12rem;
+    }
+}
