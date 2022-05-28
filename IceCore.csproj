@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\AdminView\" />
+    <Folder Include="Views\SubscriberView\" />
+  </ItemGroup>
+
 </Project>

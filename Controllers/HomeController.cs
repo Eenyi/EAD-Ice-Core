@@ -13,17 +13,6 @@ namespace IceCore.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public ViewResult SubHome() {
-            return View();
-        }
-
-        [HttpPost]
-        public ViewResult SubHome(Sub s) {
-
-            return View("SubHome", s);
-        }
-
         public IActionResult Index()
         {
             return View();
