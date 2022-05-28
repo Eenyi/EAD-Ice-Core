@@ -21,46 +21,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="home" class="OuterWrapper Theme PositionStick">
-        <div class="InnerWrapper HeaderHeight">
-          <img src="/IceCoreLogo.png" alt="Trade Mark" width="280" height="100"/>  
-        </div>
-    </div>
+    <partial name="_Header"/>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-    <h6 class="Text-h6">Get in touch</h6>
-    <h3 id="contact" class="Text-h3">Contact us</h3>
-    <div class="container">
-        <div class="row footer_display">
-            <div class="col-md Theme Text-G HeaderHeight footer_container">
-                <div>
-                    <i class="fa-solid fa-envelope contact-icon"></i>
-                    <h6>Email</h6>
-                    <h6>bitf19a004@pucit.edu.pk</h6>
-                    <a href="mailto:bitf19a004@pucit.edu.pk"><i class="contact-icon-link fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="col-md Theme Text-G HeaderHeight footer_container">
-                <div>
-                    <i class="fa-brands fa-facebook-messenger contact-icon"></i>
-                    <h6>Messanger</h6>
-                    <h6>Syed Inshal</h6>
-                    <a href="https://m.me/inshal.zahid.5/"><i class="contact-icon-link fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="col-md Theme Text-G HeaderHeight footer_container">
-                <div>
-                    <i class="fa-brands fa-whatsapp footer_container contact-icon"></i>
-                    <h6>WhatsApp</h6>
-                    <h6>+92 (312)-4060848</h6>
-                    <a href="https://wa.me/+923124060848"><i class="contact-icon-link fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <center><p style="margin-top:1rem; margin-bottom:-2rem;">© Ice Core 2022 - All right reserved</p></center>
+    <partial name="_Footer"/>
 </body>
 </html>
