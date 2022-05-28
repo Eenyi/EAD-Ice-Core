@@ -1,0 +1,31 @@
+﻿.PickPay-wrap-outer {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-top:4rem;
+}
+
+.PickPay-wrap-image {
+    display: flex;
+    width:max-content;
+    border-radius: 2rem;
+    background: linear-gradient(40deg, transparent, chocolate, transparent);
+    transform: rotate(-20deg);
+}
+
+.PickPay-img {
+    height:18.7rem;
+    width:25rem;
+    object-fit:contain;
+    border-radius: 2rem;
+    transform: rotate(20deg);
+    overflow: hidden;
+}
+
+.PickPay-wrap-content {
+    display: flex;
+    margin-top:1rem;
+    margin-left:1rem;
+    color:black;
+    font-size: 22px;
+}
