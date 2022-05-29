@@ -1,11 +1,13 @@
 ﻿.pickpay-outer-wrap {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
 .pickpay-inner-wrap {
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    flex-direction:column;
 }
 
 
@@ -13,12 +15,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 4rem;
 }
 
 .PickPay-wrap-image {
     display: flex;
-    width:max-content;
+    width: max-content;
     border-radius: 2rem;
     background: linear-gradient(40deg, transparent, chocolate, transparent);
     transform: rotate(-20deg);
@@ -30,19 +31,52 @@
     object-fit:contain;
     border-radius: 2rem;
     transform: rotate(20deg);
-    overflow: hidden;
 }
 
 .PickPay-wrap-content {
     display: flex;
-    color:black;
+    color: black;
     font-size: 22px;
-    margin-left:8px;
+    margin-left: 8px;
 }
 
 .pick-options {
-    background-color:wheat;
-    width:100%;
+    background-color: deeppink;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pick-options:hover {
+    background-color:darkorange;
+    transition:all 600ms ease;
+}
+
+.pick-options-wrap {
+    display: flex;
+    gap: 1rem;
+}
+
+.pickpay-option-text {
+    color:deeppink;
+    margin-bottom:-1px;
+    width:80%;
+    text-align:justify;
+}
+
+.detail-wrap {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.detail-wrap {
+    display:block;
 }
 
 @media(max-width:850px) {
@@ -51,16 +85,28 @@
         width: 18rem;
     }
     
-    .PickPay-wrap-image {
-
-    }
-
-    .PickPay-wrap-outer {
-
-    }
-
     .pickpay-outer-wrap {
-        flex-direction:column;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pickpay-option-text {
+        margin-bottom: 2rem;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .detail-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pick-options-wrap {
+        justify-content:center;
         align-items:center;
     }
 }
