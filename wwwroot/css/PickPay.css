@@ -46,19 +46,34 @@
     height: 8rem;
     border-radius: 1.5rem;
     cursor: pointer;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    transform: rotate(20deg);
+}
+
+.pick-options-back {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(40deg, transparent, hotpink, transparent);
+    transform: rotate(-20deg); 
 }
 
 .pick-options:hover {
-    background-color:darkorange;
-    transition:all 600ms ease;
+    background-color: darkorange;
+    transition: all 400ms ease;
+    width: 7.5rem;
+    height: 7.5rem;
 }
 
 .pick-options-wrap {
     display: flex;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 .pickpay-option-text {
@@ -77,6 +92,17 @@
 
 .detail-wrap {
     display:block;
+}
+
+.opt-cont {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.o-i {
+    font-size:20px;
+    margin-bottom:5px;
 }
 
 @media(max-width:850px) {
@@ -108,5 +134,28 @@
     .pick-options-wrap {
         justify-content:center;
         align-items:center;
+    }
+
+    .pick-options-back {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .pick-options {
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .pick-options-wrap {
+        gap: 0.7rem;
+    }
+
+    .opt-cont {
+        font-size:12px;
+    }
+
+    .pick-options:hover {
+        width: 5.8rem;
+        height: 5.8rem;
     }
 }
