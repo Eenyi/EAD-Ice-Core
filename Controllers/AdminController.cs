@@ -1,6 +1,6 @@
 ﻿namespace IceCore.Controllers
 {
-    public class AdminControllers
+    public class AdminController
     {
     }
 }

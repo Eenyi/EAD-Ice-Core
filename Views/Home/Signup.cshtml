@@ -1,19 +1,21 @@
-﻿<div class="signup-form-outer">
+﻿@using IceCore.Models
+@model Subscriber
+
+
+<div class="signup-form-outer">
 	<div class="signup-form-inner">
 		<div class="signup-icon-input"><i class="s-i fa-solid fa-user"></i>
-		<input class="inputstyle i-s" type="text" name="" placeholder="User Name"></div>
+		<input class="inputstyle i-s" asp-for="UserName" placeholder="User Name" required></div>
 		<div class="signup-icon-input"><i class="s-i fa-solid fa-key"></i>
-		<input class="inputstyle i-s" type="password" name="" placeholder="Password"></div>
-		<div class="signup-icon-input"><i class="s-i fa-solid fa-key"></i>
-		<input class="inputstyle i-s" type="password" name="" placeholder="Re-enter Password"></div>
+		<input class="inputstyle i-s" asp-for="Password" placeholder="Password" required></div>
 	</div>
 	<div class="signup-form-inner">
 		<div class="signup-icon-input"><i class="s-i fa-solid fa-envelope"></i>
-		<input class="inputstyle i-s" type="email" name="" placeholder="Email"></div>
+		<input class="inputstyle i-s" asp-for="Email" placeholder="Email" required></div>
 		<div class="signup-icon-input"><i class="s-i fa-solid fa-location-arrow"></i>
-		<input class="inputstyle i-s" type="text" name="" placeholder="Location"></div>
+		<input class="inputstyle i-s" asp-for="Address" placeholder="Address" required></div>
 		<div class="signup-icon-input"><i class="s-i fa-solid fa-phone"></i>
-		<input class="inputstyle i-s" type="tel" name="" placeholder="Phone Number"></div>
+		<input class="inputstyle i-s" asp-for="PhoneNumber" placeholder="Phone Number" required></div>
 	</div>
 </div>
 <button class="signup-submit-icon" type="submit"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>

@@ -15,10 +15,9 @@ html {
 
 body {
     margin-bottom: 60px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito', sans-serif;
     background: url(/SummerIceCream_06.svg);
     backdrop-filter: blur(120px);
+    font-family: 'Josefin Sans', sans-serif !important;
 }
 
 h3, h6{

@@ -34,3 +34,15 @@
     color: deeppink;
     /*-webkit-text-stroke: 0.1px white;*/
 }
+
+.subs-nav-name {
+    padding-top:7px;
+    margin-bottom:-1rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.subs-nav-name:active {
+    color:white;
+    font-size:17px;
+}

@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+
 <head>
     <link rel="stylesheet" href="~/css/Navbar.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Faq.css" asp-append-version="true" />
@@ -31,7 +32,7 @@
     <section ><h3 class="Text-h3">Become a Subscriber</h3>
         <div class="col signup-sub">
             <div class="row signup-outer-wrap Theme"><div class="signup-side-head-upper signup-side-head"></div>
-	            <form>
+	            <form method="post" action="/Subscriber/Signup">
                     <partial name="Signup"/>
                 </form>
             </div>
@@ -45,7 +46,7 @@
     
     <br  id="updates"><h6 class="Text-h6">Updates on</h6>
     <section><h3 class="Text-h3">What's New</h3>
-        
+        <partial name="WhatsNew"/>    
     </section>
     
     <br id="faqs"><h6 class="Text-h6">Instant ask</h6>
